@@ -2,16 +2,6 @@
   "version": 3,
   "targets": {
     "net8.0": {
-      "UyenEdu.Application/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "compile": {
-          "bin/placeholder/UyenEdu.Application.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/UyenEdu.Application.dll": {}
-        }
-      },
       "UyenEdu.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -20,21 +10,6 @@
         },
         "runtime": {
           "bin/placeholder/UyenEdu.Data.dll": {}
-        }
-      },
-      "UyenEdu.Data.EF/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "UyenEdu.Data": "1.0.0",
-          "UyenEdu.Infrastructure": "1.0.0",
-          "UyenEdu.Utilities": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/UyenEdu.Data.EF.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/UyenEdu.Data.EF.dll": {}
         }
       },
       "UyenEdu.Infrastructure/1.0.0": {
@@ -60,20 +35,10 @@
     }
   },
   "libraries": {
-    "UyenEdu.Application/1.0.0": {
-      "type": "project",
-      "path": "../UyenEdu.Application/UyenEdu.Application.csproj",
-      "msbuildProject": "../UyenEdu.Application/UyenEdu.Application.csproj"
-    },
     "UyenEdu.Data/1.0.0": {
       "type": "project",
       "path": "../UyenEdu.Data/UyenEdu.Data.csproj",
       "msbuildProject": "../UyenEdu.Data/UyenEdu.Data.csproj"
-    },
-    "UyenEdu.Data.EF/1.0.0": {
-      "type": "project",
-      "path": "../UyenEdu.Data.EF/UyenEdu.Data.EF.csproj",
-      "msbuildProject": "../UyenEdu.Data.EF/UyenEdu.Data.EF.csproj"
     },
     "UyenEdu.Infrastructure/1.0.0": {
       "type": "project",
@@ -88,9 +53,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "UyenEdu.Application >= 1.0.0",
       "UyenEdu.Data >= 1.0.0",
-      "UyenEdu.Data.EF >= 1.0.0",
       "UyenEdu.Infrastructure >= 1.0.0",
       "UyenEdu.Utilities >= 1.0.0"
     ]
@@ -101,11 +64,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\uyen.nguyen\\source\\repos\\UyenEdu\\UyenEdu\\UyenEdu.csproj",
-      "projectName": "UyenEdu",
-      "projectPath": "C:\\Users\\uyen.nguyen\\source\\repos\\UyenEdu\\UyenEdu\\UyenEdu.csproj",
+      "projectUniqueName": "C:\\Users\\uyen.nguyen\\source\\repos\\UyenEdu\\UyenEdu.Data.EF\\UyenEdu.Data.EF.csproj",
+      "projectName": "UyenEdu.Data.EF",
+      "projectPath": "C:\\Users\\uyen.nguyen\\source\\repos\\UyenEdu\\UyenEdu.Data.EF\\UyenEdu.Data.EF.csproj",
       "packagesPath": "C:\\Users\\uyen.nguyen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\uyen.nguyen\\source\\repos\\UyenEdu\\UyenEdu\\obj\\",
+      "outputPath": "C:\\Users\\uyen.nguyen\\source\\repos\\UyenEdu\\UyenEdu.Data.EF\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\uyen.nguyen\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -122,12 +85,6 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\uyen.nguyen\\source\\repos\\UyenEdu\\UyenEdu.Application\\UyenEdu.Application.csproj": {
-              "projectPath": "C:\\Users\\uyen.nguyen\\source\\repos\\UyenEdu\\UyenEdu.Application\\UyenEdu.Application.csproj"
-            },
-            "C:\\Users\\uyen.nguyen\\source\\repos\\UyenEdu\\UyenEdu.Data.EF\\UyenEdu.Data.EF.csproj": {
-              "projectPath": "C:\\Users\\uyen.nguyen\\source\\repos\\UyenEdu\\UyenEdu.Data.EF\\UyenEdu.Data.EF.csproj"
-            },
             "C:\\Users\\uyen.nguyen\\source\\repos\\UyenEdu\\UyenEdu.Data\\UyenEdu.Data.csproj": {
               "projectPath": "C:\\Users\\uyen.nguyen\\source\\repos\\UyenEdu\\UyenEdu.Data\\UyenEdu.Data.csproj"
             },
@@ -161,9 +118,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

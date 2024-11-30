@@ -1,14 +1,18 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\UyenEdu.Application\UyenEdu.Application.csproj" />
-    <ProjectReference Include="..\UyenEdu.Data.EF\UyenEdu.Data.EF.csproj" />
+    <Folder Include="Configurations\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\UyenEdu.Data\UyenEdu.Data.csproj" />
     <ProjectReference Include="..\UyenEdu.Infrastructure\UyenEdu.Infrastructure.csproj" />
     <ProjectReference Include="..\UyenEdu.Utilities\UyenEdu.Utilities.csproj" />
